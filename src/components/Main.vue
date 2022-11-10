@@ -14,6 +14,6 @@ export default {
 <style lang="scss">
 main {
     background-color: black;
-    height: 200px;
+    height: 50px;
 }
 </style>
