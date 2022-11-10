@@ -25,6 +25,55 @@ export default {
                     image: '../assets/img/buy-dc-power-visa.svg'
                 },
 
+            ],
+            links: [
+                {
+                    title: 'dc comics',
+                    link: [
+                        {
+                            href: '#',
+                            text: 'Characters'
+                        },
+                        {
+                            href: '#',
+                            text: 'Comics'
+                        },
+                        {
+                            href: '#',
+                            text: 'Movies'
+                        },
+                        {
+                            href: '#',
+                            text: 'Tv'
+                        },
+                        {
+                            href: '#',
+                            text: 'Games'
+                        },
+                        {
+                            href: '#',
+                            text: 'Videos'
+                        },
+                        {
+                            href: '#',
+                            text: 'News'
+                        }
+
+                    ]
+                },
+                {
+                    title: 'shop',
+                    link: [
+                        {
+                            href: '#',
+                            text: 'Shop Dc'
+                        },
+                        {
+                            href: '#',
+                            text: 'Shop Dc Collectibles'
+                        },
+                    ]
+                }
             ]
         }
     },
@@ -39,14 +88,31 @@ export default {
 
 <template>
     <footer id="site_footer">
+
         <div class="header_footer">
             <div v-for="img in buy" class="buy">
                 <img :src="getImageUrl(img.image)" alt="">
                 {{ img.text }}
             </div>
         </div>
-        <div class="main_footer"></div>
-        <div class="footer_footer"></div>
+
+        <div class="main_footer">
+            <div class="container">
+                <div class="content">
+                    <div class="col_4">
+                        <div v-for="link in links">
+                            <div class="footer_title">{{ link.title }}</div>
+                            <a class="footer_link" v-for="text in link.link" href="">{{ text.text }}</a>
+                        </div>
+                    </div>
+                    <div class="col_4"></div>
+                    <div class="col_4"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer_footer">
+        </div>
     </footer>
     <!-- / footer -->
 </template>

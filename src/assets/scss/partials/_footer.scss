@@ -2,6 +2,7 @@
 
 footer {
 
+
     .header_footer {
         background-color: $primary_color;
         display: flex;
@@ -23,8 +24,33 @@ footer {
     }
 
     .main_footer {
-        height: 300px;
+        padding: 3rem 0;
         background-image: url(./assets/img/footer-bg.jpg);
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+
+            .content {
+                width: 30%;
+
+                .footer_title {
+                    padding: 0.5rem 0;
+                    color: $light;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+
+                .footer_link {
+                    font-size: 0.75rem;
+                    color: $dark-light;
+                    display: block;
+                    text-decoration: none;
+                    padding: 0.25rem 0;
+                }
+            }
+        }
     }
 
     .footer_footer {

@@ -11,3 +11,7 @@
 img {
     max-width: 100%;
 }
+
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
