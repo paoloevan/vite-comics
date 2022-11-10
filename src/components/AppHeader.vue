@@ -64,7 +64,8 @@ export default {
             <img src="../assets/img/dc-logo.png" alt="">
 
             <div class="navbar">
-                <a v-for="link in navbar" :href="link.href">{{ link.text }}</a>
+                <a v-for="link in navbar" :href="link.href" :class="link.text === 'comics' ? 'active' : ''">{{ link.text
+                }}</a>
             </div>
         </div>
     </header>
