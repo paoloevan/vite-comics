@@ -10,6 +10,8 @@ footer {
         align-items: center;
         color: white;
         padding: 1rem;
+        z-index: 99;
+        position: relative;
 
         img {
             width: 50px;
@@ -30,6 +32,19 @@ footer {
         .container {
             max-width: 1200px;
             margin: auto;
+            position: relative;
+
+            .logo_bg {
+                position: absolute;
+                right: 1rem;
+                top: -10rem;
+                bottom: -10rem;
+
+                img {
+
+                    height: 600px;
+                }
+            }
 
             .content {
                 width: 30%;
@@ -56,7 +71,9 @@ footer {
     }
 
     .footer_footer {
-        background-color: gray;
+        background-color: $secondary_color;
         height: 100px;
+        z-index: 99;
+        position: relative;
     }
 }
