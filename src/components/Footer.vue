@@ -6,7 +6,7 @@ export default {
             buy: [
                 {
                     text: 'digital comics',
-                    image: 'buy-comics-digital-comics.png'
+                    image: '../assets/img/buy-comics-digital-comics.png'
                 },
                 {
                     text: 'dc merchandise',
@@ -27,6 +27,12 @@ export default {
 
             ]
         }
+    },
+    methods: {
+        getImageUrl(name) {
+            return new URL(name, import.meta.url).href
+        }
+
     }
 }
 </script>
@@ -34,8 +40,8 @@ export default {
 <template>
     <footer id="site_footer">
         <div class="header_footer">
-            <div v-for="img in buy">
-                <img :src="img.image" alt="">
+            <div v-for="img in buy" class="buy">
+                <img :src="getImageUrl(img.image)" alt="">
                 {{ img.text }}
             </div>
         </div>
