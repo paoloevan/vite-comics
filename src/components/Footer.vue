@@ -74,6 +74,86 @@ export default {
                         },
                     ]
                 }
+            ],
+            linksTwo: [
+                {
+                    title: 'dc',
+                    link: [
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+
+                    ]
+                }
+            ],
+            sities: [
+                {
+                    title: 'sities',
+                    link: [
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        },
+                        {
+                            href: '#',
+                            text: 'lorem lorem'
+                        }
+                    ]
+                }
+
             ]
         }
     },
@@ -102,11 +182,21 @@ export default {
                     <div class="col_4">
                         <div v-for="link in links">
                             <div class="footer_title">{{ link.title }}</div>
-                            <a class="footer_link" v-for="text in link.link" href="">{{ text.text }}</a>
+                            <a class="footer_link" v-for="text in link.link" :href="text.href">{{ text.text }}</a>
                         </div>
                     </div>
-                    <div class="col_4"></div>
-                    <div class="col_4"></div>
+                    <div class="col_4">
+                        <div v-for="link in linksTwo">
+                            <div class="footer_title">{{ link.title }}</div>
+                            <a class="footer_link" v-for="text in link.link" :href="text.href">{{ text.text }}</a>
+                        </div>
+                    </div>
+                    <div class="col_4">
+                        <div v-for="link in sities">
+                            <div class="footer_title">{{ link.title }}</div>
+                            <a class="footer_link" v-for="text in link.link" :href="text.href">{{ text.text }}</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
