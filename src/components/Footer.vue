@@ -13,7 +13,7 @@ export default {
     <!-- / footer -->
 </template>
 
-<style>
+<style lang="scss">
 .header_footer {
     background-color: blue;
     height: 220px;

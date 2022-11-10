@@ -11,7 +11,7 @@ export default {
     <!-- / Main -->
 </template>
 
-<style>
+<style lang="scss">
 main {
     background-color: black;
     height: 200px;
