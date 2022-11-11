@@ -1,0 +1,16 @@
+@use './palette' as *;
+
+main {
+    background-color: $secondary_color;
+
+    .jumbotron {
+        height: 300px;
+        width: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

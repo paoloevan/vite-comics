@@ -22,20 +22,3 @@ export default {
     </main>
     <!-- / Main -->
 </template>
-
-<style lang="scss">
-main {
-    background-color: black;
-}
-
-.jumbotron {
-    height: 300px;
-    width: 100%;
-
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-}
-</style>

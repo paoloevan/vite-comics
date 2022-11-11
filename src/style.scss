@@ -1,5 +1,7 @@
 @use './assets/scss/partials/header';
 @use './assets/scss/partials/footer';
+@use './assets/scss/partials/main';
+@use './assets/scss/partials/palette' as *;
 
 * {
     margin: 0;
