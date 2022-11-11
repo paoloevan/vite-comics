@@ -34,6 +34,11 @@ main {
                     height: 100%;
                     object-fit: cover;
                     object-position: top;
+                    cursor: pointer;
+
+                    &:hover {
+                        filter: opacity(40%);
+                    }
                 }
             }
 
