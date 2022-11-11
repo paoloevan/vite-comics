@@ -1,12 +1,12 @@
 <script>
 import comics from '../../vue-dc-comics-2/dc-comics';
-import Comic from '../components/Comic.vue'
+import ComicItem from './ComicItem.vue'
 
 export default {
     name: 'ComicList',
     components: {
         comics,
-        Comic
+        ComicItem
     },
     data() {
         return {
@@ -17,10 +17,9 @@ export default {
 </script>
 
 <template>
+
     .<div class="container">
-        <Comic v-for="card in comics" :img="card.thumb" :price="card.price" :series="card.series" :type="card.type" />
-
-
-
+        <ComicItem v-for="card in comics" :img="card.thumb" :price="card.price" :series="card.series"
+            :type="card.type" />
     </div>
 </template>

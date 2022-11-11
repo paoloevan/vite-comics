@@ -7,15 +7,15 @@ Quando la struttura a macroblocchi è pronta, popolate le voci di menu dinamicam
 <script>
 
 import AppHeader from './components/AppHeader.vue';
-import Main from './components/Main.vue';
-import Footer from './components/Footer.vue';
+import SiteMain from './components/SiteMain.vue';
+import SiteFooter from './components/SiteFooter.vue';
 
 export default {
   name: 'App',
   components: {
     AppHeader,
-    Main,
-    Footer
+    SiteMain,
+    SiteFooter
   }
 }
 </script>
@@ -23,8 +23,8 @@ export default {
 <template>
 
   <AppHeader />
-  <Main />
-  <Footer />
+  <SiteMain />
+  <SiteFooter />
 </template>
 
 <style>

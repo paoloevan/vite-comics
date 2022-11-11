@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'Comic',
+    name: 'ComicItem',
     props: {
         img: String,
         price: String,

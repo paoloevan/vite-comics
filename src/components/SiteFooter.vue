@@ -1,7 +1,7 @@
 <script>
-import HeaderFooter from '../components/HeaderFooter.vue'
-import MainFooter from '../components/MainFooter.vue'
-import FooterFooter from '../components/FooterFooter.vue'
+import HeaderFooter from './HeaderFooter.vue'
+import MainFooter from './MainFooter.vue'
+import FooterFooter from './FooterFooter.vue'
 
 export default {
     name: 'Footer',

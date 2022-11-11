@@ -1,8 +1,8 @@
 <script>
-import ComicList from '../components/ComicList.vue'
+import ComicList from './ComicList.vue'
 
 export default {
-    name: 'Main',
+    name: 'SiteMain',
     components: {
         ComicList
     }
@@ -15,7 +15,11 @@ export default {
         <div class="jumbotron">
             <img src="../assets/img/jumbotron.jpg" alt="">
 
+            <span class="current">current series</span>
+
         </div>
+
+
 
         <ComicList />
 
