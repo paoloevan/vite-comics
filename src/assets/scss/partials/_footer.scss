@@ -30,8 +30,6 @@ footer {
         background-image: url(./assets/img/footer-bg.jpg);
 
         .container {
-            max-width: 1200px;
-            margin: auto;
             position: relative;
 
             .logo_bg {
@@ -72,8 +70,34 @@ footer {
 
     .footer_footer {
         background-color: $secondary_color;
-        height: 100px;
         z-index: 99;
         position: relative;
+        text-transform: uppercase;
+        padding: 2rem 0;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                padding: 0.5rem;
+                border: 2px solid $primary_color;
+                background-color: transparent;
+                text-transform: uppercase;
+                color: $light;
+            }
+
+            .social {
+                display: flex;
+                gap: 1rem;
+
+                span {
+                    color: $primary_color;
+                    font-weight: bold;
+
+                }
+            }
+        }
     }
 }
