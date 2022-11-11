@@ -24,6 +24,10 @@ export default {
 </template>
 
 <style lang="scss">
+main {
+    background-color: black;
+}
+
 .jumbotron {
     height: 300px;
     width: 100%;
