@@ -1,7 +1,4 @@
 <script>
-import HeaderFooter from './HeaderFooter.vue'
-import MainFooter from './MainFooter.vue'
-import FooterFooter from './FooterFooter.vue'
 
 export default {
     name: 'SiteFooter',
@@ -173,12 +170,62 @@ export default {
 <template>
     <footer id="site_footer">
 
-        <HeaderFooter />
-        <MainFooter />
-        <FooterFooter />
+        <div class="header_footer">
+            <div v-for="img in buy" class="buy">
+                <img :src="getImageUrl(img.image)" alt="">
+                {{ img.text }}
+            </div>
+        </div>
+
+
+        <div class="main_footer">
+            <div class="container">
+                <div class="content">
+                    <div class="col_4">
+                        <div v-for="link in links">
+                            <div class="footer_title">{{ link.title }}</div>
+                            <a class="footer_link" v-for="text in link.link" :href="text.href">{{ text.text }}</a>
+                        </div>
+                    </div>
+                    <div class="col_4">
+                        <div v-for="link in linksTwo">
+                            <div class="footer_title">{{ link.title }}</div>
+                            <a class="footer_link" v-for="text in link.link" :href="text.href">{{ text.text }}</a>
+                        </div>
+                    </div>
+                    <div class="col_4">
+                        <div v-for="link in sities">
+                            <div class="footer_title">{{ link.title }}</div>
+                            <a class="footer_link" v-for="text in link.link" :href="text.href">{{ text.text }}</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="logo_bg">
+
+                    <img src="../assets/img/dc-logo-bg.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_footer">
+            .<div class="container">
+                <button>sign-up now</button>
+
+                <div class="social">
+                    <span>follow us</span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+            </div>
 
 
 
+        </div>
 
 
     </footer>
