@@ -25,6 +25,7 @@ export default {
   <AppHeader />
   <SiteMain />
   <SiteFooter />
+
 </template>
 
 <style>

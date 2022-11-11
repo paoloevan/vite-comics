@@ -4,7 +4,7 @@ import MainFooter from './MainFooter.vue'
 import FooterFooter from './FooterFooter.vue'
 
 export default {
-    name: 'Footer',
+    name: 'SiteFooter',
     data() {
         return {
             buy: [

@@ -23,6 +23,10 @@ export default {
 
         <ComicList />
 
+        <div class="load">
+            <button>load more</button>
+        </div>
+
     </main>
     <!-- / Main -->
 </template>
