@@ -13,9 +13,10 @@ export default {
 <template>
     <div class="my_card col_2">
         <div class="card_image">
-            <img :src="img" alt="series">
+            <img :src="img" :alt="series">
         </div>
-        <div class=" card_title">{{ series }}
+        <div class=" card_title">
+            {{ series }}
         </div>
     </div>
 </template>
