@@ -24,7 +24,7 @@ export default {
         <ComicList />
 
         <div class="load">
-            <button>load more</button>
+            <a>load more</a>
         </div>
 
     </main>

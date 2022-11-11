@@ -68,6 +68,17 @@ main {
     }
 
     .load {
-        text-transform: uppercase;
+        text-align: center;
+        padding: 4rem 0;
+        cursor: pointer;
+
+        a {
+            text-transform: uppercase;
+            color: $light;
+            background-color: $primary_color;
+            padding: 0.5rem 3rem;
+            font-weight: bold;
+
+        }
     }
 }
